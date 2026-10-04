@@ -16,6 +16,7 @@ This Streamlit prototype shows how a central AI platform can expose **Eval-as-a-
 - Trace explorer with tool arguments/results
 - Failure promotion into a persistent regression corpus
 - Illustrative API/service contract
+- Lightweight unit tests and GitHub Actions CI
 
 ## Ownership model
 
@@ -32,11 +33,23 @@ This Streamlit prototype shows how a central AI platform can expose **Eval-as-a-
 - Golden cases and expected outcomes
 - SME validation of failures and regression cases
 
+## Documentation
+
+- [Architecture](docs/architecture.md) — end-to-end components, contracts, release gates, and ownership boundaries
+- [Production evaluation](docs/production-evaluation.md) — offline evals, canary rollout, production monitoring, and regression loops
+- [Domain onboarding](docs/domain-onboarding.md) — how domain teams define workflows, business metrics, thresholds, and golden datasets
+
 ## Run
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+```
+
+Run tests with:
+
+```bash
+pytest -q
 ```
 
 ## Demo modes
@@ -75,6 +88,8 @@ Production/eval failure → regression corpus
 - `regression_store.py` — promote failures into regression corpus
 - `api_contract.py` — illustrative service API
 - `sample_golden_dataset.csv` — example domain dataset
+- `tests/` — runtime and evaluator unit tests
+- `.github/workflows/ci.yml` — automated test workflow
 
 ## Production next steps
 
