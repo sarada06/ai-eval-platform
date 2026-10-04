@@ -2,6 +2,14 @@
 
 This Streamlit prototype shows how a central AI platform can expose **Eval-as-a-Service** to domain teams while keeping business truth domain-owned.
 
+## Interactive demo
+
+A browser-based version of the prototype is included under `site/` and is designed to run on GitHub Pages.
+
+**Expected Pages URL:** https://sarada06.github.io/ai-eval-platform/
+
+The Pages demo includes domain onboarding, configurable thresholds, golden cases, candidate vs baseline evaluation, unsafe-action hard gates, release decisions, and trace inspection. It is fully client-side, so it does not require a Python backend.
+
 ## What is implemented
 
 - Domain onboarding and workflow registration
@@ -17,6 +25,7 @@ This Streamlit prototype shows how a central AI platform can expose **Eval-as-a-
 - Failure promotion into a persistent regression corpus
 - Illustrative API/service contract
 - Lightweight unit tests and GitHub Actions CI
+- Static GitHub Pages interactive prototype
 
 ## Ownership model
 
@@ -39,7 +48,7 @@ This Streamlit prototype shows how a central AI platform can expose **Eval-as-a-
 - [Production evaluation](docs/production-evaluation.md) — offline evals, canary rollout, production monitoring, and regression loops
 - [Domain onboarding](docs/domain-onboarding.md) — how domain teams define workflows, business metrics, thresholds, and golden datasets
 
-## Run
+## Run locally
 
 ```bash
 pip install -r requirements.txt
@@ -88,8 +97,10 @@ Production/eval failure → regression corpus
 - `regression_store.py` — promote failures into regression corpus
 - `api_contract.py` — illustrative service API
 - `sample_golden_dataset.csv` — example domain dataset
+- `site/index.html` — static interactive GitHub Pages prototype
 - `tests/` — runtime and evaluator unit tests
 - `.github/workflows/ci.yml` — automated test workflow
+- `.github/workflows/pages.yml` — GitHub Pages deployment workflow
 
 ## Production next steps
 
