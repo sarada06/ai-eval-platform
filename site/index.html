@@ -7,13 +7,13 @@
   <style>
     :root{--bg:#0b1020;--panel:#121a2e;--muted:#8fa1c7;--text:#edf3ff;--line:#263555;--good:#38d39f;--bad:#ff6b7a;--warn:#ffc857;--accent:#6ea8fe}
     *{box-sizing:border-box} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;background:linear-gradient(180deg,#08101d,#0d1325 35%,#0b1020);color:var(--text)}
-    .wrap{max-width:1180px;margin:auto;padding:28px}.hero{display:flex;justify-content:space-between;gap:24px;align-items:flex-start;margin-bottom:20px}.eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}h1{margin:.35rem 0 .5rem;font-size:34px;line-height:1.1}.sub{color:var(--muted);max-width:780px;line-height:1.5}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:1.05fr 1.4fr;gap:18px}.panel{background:rgba(18,26,46,.94);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 14px 40px rgba(0,0,0,.18)}.panel h2{font-size:17px;margin:0 0 14px}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{margin-bottom:12px}.field label{display:block;color:var(--muted);font-size:12px;margin-bottom:6px}.field input,.field select{width:100%;background:#0c1427;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 11px}.metric{display:grid;grid-template-columns:1.5fr .7fr .6fr;gap:8px;align-items:center;margin:8px 0}.metric small{color:var(--muted)}input[type=range]{width:100%}.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}button{background:var(--accent);color:#08101d;border:0;border-radius:10px;padding:10px 14px;font-weight:800;cursor:pointer}button.secondary{background:#17213a;color:var(--text);border:1px solid var(--line)}button.danger{background:#44202a;color:#ffd7dc;border:1px solid #6a2d3b}.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.kpi{background:#0c1427;border:1px solid var(--line);border-radius:12px;padding:12px}.kpi .v{font-size:24px;font-weight:800}.kpi .l{font-size:11px;color:var(--muted);margin-top:4px}.good{color:var(--good)}.bad{color:var(--bad)}.warn{color:var(--warn)}.gate{margin-top:14px;border-radius:14px;padding:14px;border:1px solid var(--line);background:#0d1629}.gate.pass{border-color:#235c4c}.gate.fail{border-color:#6a2d3b}.gate b{font-size:18px}.table{width:100%;border-collapse:collapse;margin-top:12px;font-size:13px}.table th,.table td{padding:10px;border-bottom:1px solid var(--line);text-align:left}.table th{color:var(--muted);font-weight:600}.tag{display:inline-block;border-radius:999px;padding:3px 8px;border:1px solid var(--line);font-size:11px}.trace{margin-top:12px;background:#09101f;border:1px solid var(--line);border-radius:12px;padding:12px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;white-space:pre-wrap;max-height:260px;overflow:auto}.section{margin-top:18px}.note{color:var(--muted);font-size:12px;line-height:1.5}.footer{color:var(--muted);font-size:12px;margin:24px 0 6px;text-align:center}@media(max-width:900px){.grid{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}.hero{flex-direction:column}}
+    .wrap{max-width:1220px;margin:auto;padding:28px}.hero{display:flex;justify-content:space-between;gap:24px;align-items:flex-start;margin-bottom:20px}.eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}h1{margin:.35rem 0 .5rem;font-size:34px;line-height:1.1}.sub{color:var(--muted);max-width:800px;line-height:1.5}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:1.08fr 1.4fr;gap:18px}.panel{background:rgba(18,26,46,.94);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 14px 40px rgba(0,0,0,.18)}.panel h2{font-size:17px;margin:0 0 14px}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.row3{display:grid;grid-template-columns:1.2fr 1fr .75fr;gap:10px}.field{margin-bottom:12px}.field label{display:block;color:var(--muted);font-size:12px;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;background:#0c1427;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 11px}.metric{display:grid;grid-template-columns:1.5fr .7fr .6fr;gap:8px;align-items:center;margin:8px 0}.metric small{color:var(--muted)}input[type=range]{width:100%}.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}button{background:var(--accent);color:#08101d;border:0;border-radius:10px;padding:10px 14px;font-weight:800;cursor:pointer}button.secondary{background:#17213a;color:var(--text);border:1px solid var(--line)}button.danger{background:#44202a;color:#ffd7dc;border:1px solid #6a2d3b}button.small{padding:6px 9px;font-size:11px}.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.kpi{background:#0c1427;border:1px solid var(--line);border-radius:12px;padding:12px}.kpi .v{font-size:24px;font-weight:800}.kpi .l{font-size:11px;color:var(--muted);margin-top:4px}.good{color:var(--good)}.bad{color:var(--bad)}.warn{color:var(--warn)}.gate{margin-top:14px;border-radius:14px;padding:14px;border:1px solid var(--line);background:#0d1629}.gate.pass{border-color:#235c4c}.gate.fail{border-color:#6a2d3b}.gate b{font-size:18px}.table{width:100%;border-collapse:collapse;margin-top:12px;font-size:13px}.table th,.table td{padding:10px;border-bottom:1px solid var(--line);text-align:left}.table th{color:var(--muted);font-weight:600}.tag{display:inline-block;border-radius:999px;padding:3px 8px;border:1px solid var(--line);font-size:11px}.tag.hard{border-color:#7b3c48;color:#ffd7dc}.trace{margin-top:12px;background:#09101f;border:1px solid var(--line);border-radius:12px;padding:12px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;white-space:pre-wrap;max-height:260px;overflow:auto}.section{margin-top:18px}.note{color:var(--muted);font-size:12px;line-height:1.5}.footer{color:var(--muted);font-size:12px;margin:24px 0 6px;text-align:center}.eval-card{border:1px solid var(--line);border-radius:12px;padding:12px;margin:9px 0;background:#0d1629}.eval-head{display:flex;justify-content:space-between;gap:12px;align-items:center}.eval-title{font-weight:750}.eval-meta{font-size:11px;color:var(--muted);margin-top:5px}.eval-result{font-size:12px;margin-top:7px}.divider{height:1px;background:var(--line);margin:14px 0}.checkbox{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12px}.checkbox input{width:auto}.business-grid{display:grid;grid-template-columns:1.2fr .9fr .75fr .75fr;gap:8px;align-items:end}.empty{border:1px dashed var(--line);border-radius:10px;padding:12px;color:var(--muted);font-size:12px}.help{background:#0c1427;border-left:3px solid var(--accent);padding:10px 12px;border-radius:8px;color:var(--muted);font-size:12px;line-height:1.45}@media(max-width:900px){.grid{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}.hero{flex-direction:column}.business-grid,.row3{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
 <div class="wrap">
   <div class="hero">
-    <div><div class="eyebrow">Interactive Reference Prototype</div><h1>Production AI Eval Platform</h1><div class="sub">The platform owns how quality is measured; domain teams own what good means. Configure business thresholds, run a candidate against golden cases, inspect traces, and see release gates in action.</div></div>
+    <div><div class="eyebrow">Interactive Reference Prototype</div><h1>Production AI Eval Platform</h1><div class="sub">The platform owns how quality is measured; domain teams own what good means. Configure platform thresholds, add business-specific evals, run a candidate against golden cases, inspect traces, and see release gates in action.</div></div>
     <div class="pill">Static GitHub Pages demo • no backend required</div>
   </div>
 
@@ -23,15 +23,29 @@
       <div class="row"><div class="field"><label>Domain</label><select id="domain"><option>Supply Chain</option><option>Finance</option><option>HR</option></select></div><div class="field"><label>Workflow</label><input id="workflow" value="Supplier Shortage Resolution"/></div></div>
       <div class="row"><div class="field"><label>Criticality</label><select id="criticality"><option>High</option><option>Medium</option><option>Low</option></select></div><div class="field"><label>Autonomy</label><select id="autonomy"><option>Recommendation + approval</option><option>Copilot</option><option>Autonomous</option></select></div></div>
 
-      <h2 class="section">2. Release thresholds</h2>
+      <h2 class="section">2. Platform quality thresholds</h2>
       <div class="metric"><small>Task success</small><input id="task" type="range" min="80" max="100" value="92"/><span id="taskV">92%</span></div>
       <div class="metric"><small>Tool accuracy</small><input id="tool" type="range" min="80" max="100" value="95"/><span id="toolV">95%</span></div>
       <div class="metric"><small>Groundedness</small><input id="ground" type="range" min="80" max="100" value="90"/><span id="groundV">90%</span></div>
-      <div class="metric"><small>Supplier accuracy</small><input id="supplier" type="range" min="80" max="100" value="98"/><span id="supplierV">98%</span></div>
-      <div class="metric"><small>Approval compliance</small><input id="approval" type="range" min="80" max="100" value="100"/><span id="approvalV">100%</span></div>
       <div class="note">Platform hard gates are non-bypassable: unauthorized actions = 0 and critical policy violations = 0.</div>
 
-      <h2 class="section">3. Run scenario</h2>
+      <div class="divider"></div>
+      <h2>3. Domain business evals</h2>
+      <div class="help">Domain teams can define additional release criteria without modifying the central eval engine. Choose a metric source, set the threshold, and optionally make it a hard gate. For a real deployment, the source would map to a deterministic evaluator, business telemetry query, or judge.</div>
+      <div class="business-grid section">
+        <div class="field"><label>Eval name</label><input id="beName" placeholder="e.g. Supplier selection accuracy"/></div>
+        <div class="field"><label>Metric source</label><select id="beSource"><option value="supplier">Supplier selection</option><option value="approval">Approval compliance</option><option value="task">Task success</option><option value="grounded">Groundedness</option><option value="tool">Tool accuracy</option><option value="custom">Custom demo score</option></select></div>
+        <div class="field"><label>Threshold %</label><input id="beThreshold" type="number" min="0" max="100" value="95"/></div>
+        <div class="field"><label>Custom score %</label><input id="beCustom" type="number" min="0" max="100" value="95"/></div>
+      </div>
+      <div class="row">
+        <label class="checkbox"><input id="beHard" type="checkbox"/> Treat as domain hard gate</label>
+        <div class="field"><label>Description / rationale</label><input id="beDescription" placeholder="Why this matters to the business"/></div>
+      </div>
+      <div class="btns"><button class="secondary" onclick="addBusinessEval()">+ Add business eval</button></div>
+      <div id="businessEvals" class="section"></div>
+
+      <h2 class="section">4. Run scenario</h2>
       <div class="btns"><button onclick="runEval('candidate')">Run candidate eval</button><button class="secondary" onclick="runEval('baseline')">Run baseline</button><button class="danger" onclick="runEval('unsafe')">Run unsafe demo</button></div>
     </div>
 
@@ -44,7 +58,10 @@
         <div class="kpi"><div id="kCost" class="v">—</div><div class="l">Avg cost / case</div></div>
         <div class="kpi"><div id="kLatency" class="v">—</div><div class="l">Avg latency</div></div>
       </div>
-      <div id="gate" class="gate"><b>Run an evaluation</b><div class="note">Candidate results will be checked against domain thresholds and platform hard gates.</div></div>
+      <div id="gate" class="gate"><b>Run an evaluation</b><div class="note">Candidate results will be checked against platform thresholds, domain business evals, and platform hard gates.</div></div>
+
+      <h2 class="section">Business eval results</h2>
+      <div id="businessResults" class="empty">Add one or more business evals, then run an evaluation.</div>
 
       <h2 class="section">Golden dataset results</h2>
       <table class="table"><thead><tr><th>Case</th><th>Outcome</th><th>Grounded</th><th>Policy</th></tr></thead><tbody id="rows"></tbody></table>
@@ -57,7 +74,7 @@
 
   <div class="panel section">
     <h2>How this maps to production</h2>
-    <div class="note">In production, replace the browser simulation with real agent endpoints, MCP/tool gateways, identity context, OTEL traces, versioned eval packs, deterministic validators, and an LLM-as-judge service. The contract stays the same: golden cases + platform controls + domain thresholds → release decision → production monitoring → regression corpus.</div>
+    <div class="note">In production, replace the browser simulation with real agent endpoints, MCP/tool gateways, identity context, OTEL traces, versioned eval packs, deterministic validators, business telemetry and an LLM-as-judge service. Domain business eval definitions become versioned configuration that the central runner resolves to an evaluator and applies during release gating.</div>
   </div>
   <div class="footer">Reference implementation for production-grade agent evaluation and governance.</div>
 </div>
@@ -69,8 +86,33 @@ const golden=[
  {id:'SC-004',expected:'escalate_for_review',tools:['inventory_lookup','supplier_lookup'],approval:true}
 ];
 let current=[];
-['task','tool','ground','supplier','approval'].forEach(id=>document.getElementById(id).addEventListener('input',e=>document.getElementById(id+'V').textContent=e.target.value+'%'));
+let businessEvals=[
+ {id:'be-1',name:'Supplier selection accuracy',source:'supplier',threshold:98,custom:95,hard:false,description:'Correct supplier must satisfy domain constraints.'},
+ {id:'be-2',name:'Approval compliance',source:'approval',threshold:100,custom:100,hard:true,description:'High-risk recommendations requiring approval must not bypass review.'}
+];
+['task','tool','ground'].forEach(id=>document.getElementById(id).addEventListener('input',e=>document.getElementById(id+'V').textContent=e.target.value+'%'));
 function pct(v){return Math.round(v*100)+'%'}
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+function sourceLabel(s){return ({supplier:'Supplier selection',approval:'Approval compliance',task:'Task success',grounded:'Groundedness',tool:'Tool accuracy',custom:'Custom demo score'})[s]||s}
+function renderBusinessEvals(){
+ const el=document.getElementById('businessEvals');
+ if(!businessEvals.length){el.innerHTML='<div class="empty">No domain business evals defined yet.</div>';return}
+ el.innerHTML=businessEvals.map(e=>`<div class="eval-card"><div class="eval-head"><div><div class="eval-title">${esc(e.name)} ${e.hard?'<span class="tag hard">HARD GATE</span>':''}</div><div class="eval-meta">${esc(sourceLabel(e.source))} • threshold ≥ ${e.threshold}%${e.source==='custom'?' • demo score '+e.custom+'%':''}</div></div><button class="danger small" onclick="removeBusinessEval('${e.id}')">Remove</button></div><div class="eval-meta">${esc(e.description||'No rationale provided.')}</div></div>`).join('');
+}
+function addBusinessEval(){
+ const name=document.getElementById('beName').value.trim();
+ if(!name){alert('Enter an eval name.');return}
+ const source=document.getElementById('beSource').value;
+ const threshold=Math.max(0,Math.min(100,Number(document.getElementById('beThreshold').value||0)));
+ const custom=Math.max(0,Math.min(100,Number(document.getElementById('beCustom').value||0)));
+ const hard=document.getElementById('beHard').checked;
+ const description=document.getElementById('beDescription').value.trim();
+ businessEvals.push({id:'be-'+Date.now(),name,source,threshold,custom,hard,description});
+ document.getElementById('beName').value='';document.getElementById('beDescription').value='';document.getElementById('beHard').checked=false;
+ renderBusinessEvals();
+ document.getElementById('businessResults').innerHTML='<div class="note">Business eval configuration changed. Run the evaluation again to refresh the release decision.</div>';
+}
+function removeBusinessEval(id){businessEvals=businessEvals.filter(x=>x.id!==id);renderBusinessEvals();document.getElementById('businessResults').innerHTML='<div class="note">Business eval configuration changed. Run the evaluation again to refresh the release decision.</div>'}
 function simulate(c,variant){
  let outcome=c.expected, grounded=true, unauthorized=0, policy=0;
  if(variant==='candidate'&&c.id==='SC-003'){outcome='recommend_supplier_a';grounded=false}
@@ -80,18 +122,30 @@ function simulate(c,variant){
  const task=outcome===c.expected?1:0;
  return {id:c.id,outcome,task,tool:1,grounded:grounded?1:0,supplier:task,approval:1,unauthorized,policy,cost:.045+.009*calls.length,latency:900+calls.reduce((a,b)=>a+b.latency_ms,0),calls};
 }
+function businessScore(e,m){
+ if(e.source==='custom')return e.custom/100;
+ return ({supplier:m.supplier,approval:m.approval,task:m.task,grounded:m.ground,tool:m.tool})[e.source]??0;
+}
 function runEval(variant){
  current=golden.map(c=>simulate(c,variant));
  const avg=k=>current.reduce((s,x)=>s+x[k],0)/current.length;
  const total=k=>current.reduce((s,x)=>s+x[k],0);
  const m={task:avg('task'),tool:avg('tool'),ground:avg('grounded'),supplier:avg('supplier'),approval:avg('approval'),cost:avg('cost'),latency:avg('latency'),unauth:total('unauthorized'),policy:total('policy')};
  kTask.textContent=pct(m.task); kTool.textContent=pct(m.tool); kGround.textContent=pct(m.ground); kCost.textContent='$'+m.cost.toFixed(3); kLatency.textContent=Math.round(m.latency)+' ms';
- const checks=[m.task>=task.value/100,m.tool>=tool.value/100,m.ground>=ground.value/100,m.supplier>=supplier.value/100,m.approval>=approval.value/100,m.unauth===0,m.policy===0];
- const pass=checks.every(Boolean); gate.className='gate '+(pass?'pass':'fail'); gate.innerHTML='<b class="'+(pass?'good':'bad')+'">'+(pass?'RELEASE PASS':'RELEASE BLOCKED')+'</b><div class="note">'+(pass?'All domain thresholds and platform hard gates passed.':'One or more quality or safety gates failed. Inspect cases and traces below.')+'</div>';
+ const platformChecks=[{name:'Task success',pass:m.task>=task.value/100},{name:'Tool accuracy',pass:m.tool>=tool.value/100},{name:'Groundedness',pass:m.ground>=ground.value/100},{name:'Unauthorized action',pass:m.unauth===0},{name:'Critical policy violation',pass:m.policy===0}];
+ const businessChecks=businessEvals.map(e=>{const score=businessScore(e,m);return {...e,score,pass:score>=e.threshold/100}});
+ const pass=platformChecks.every(x=>x.pass)&&businessChecks.every(x=>x.pass);
+ gate.className='gate '+(pass?'pass':'fail');
+ const failed=[...platformChecks.filter(x=>!x.pass).map(x=>x.name),...businessChecks.filter(x=>!x.pass).map(x=>x.name)];
+ gate.innerHTML='<b class="'+(pass?'good':'bad')+'">'+(pass?'RELEASE PASS':'RELEASE BLOCKED')+'</b><div class="note">'+(pass?'All platform thresholds, domain business evals, and hard gates passed.':'Failed gates: '+esc(failed.join(', '))+'.')+'</div>';
  rows.innerHTML=current.map(x=>'<tr><td><span class="tag">'+x.id+'</span></td><td class="'+(x.task?'good':'bad')+'">'+x.outcome+'</td><td class="'+(x.grounded?'good':'bad')+'">'+(x.grounded?'PASS':'FAIL')+'</td><td class="'+((x.unauthorized||x.policy)?'bad':'good')+'">'+((x.unauthorized||x.policy)?'BLOCK':'PASS')+'</td></tr>').join('');
+ const br=document.getElementById('businessResults');
+ if(!businessChecks.length)br.innerHTML='<div class="empty">No domain business evals are configured. Release decision uses platform checks only.</div>';
+ else br.innerHTML=businessChecks.map(e=>`<div class="eval-card"><div class="eval-head"><div><div class="eval-title">${esc(e.name)} ${e.hard?'<span class="tag hard">HARD GATE</span>':''}</div><div class="eval-meta">Score ${pct(e.score)} • threshold ${e.threshold}% • ${esc(sourceLabel(e.source))}</div></div><span class="${e.pass?'good':'bad'}"><b>${e.pass?'PASS':'FAIL'}</b></span></div><div class="eval-result">${esc(e.description||'Domain-defined business release criterion.')}</div></div>`).join('');
  traceSelect.innerHTML=current.map((x,i)=>'<option value="'+i+'">'+x.id+'</option>').join(''); renderTrace();
 }
 function renderTrace(){if(!current.length)return; const x=current[+traceSelect.value||0]; trace.textContent=JSON.stringify({trace_id:'demo-'+x.id,case_id:x.id,model:'gpt-enterprise-demo',prompt_version:'p17',toolset_version:'mcp-4',final_outcome:x.outcome,grounded:!!x.grounded,tool_calls:x.calls,total_latency_ms:x.latency,estimated_cost_usd:+x.cost.toFixed(3)},null,2)}
+renderBusinessEvals();
 </script>
 </body>
 </html>
